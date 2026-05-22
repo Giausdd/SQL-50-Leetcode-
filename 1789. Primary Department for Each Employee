@@ -1,0 +1,12 @@
+select distinct employee_id , department_id
+
+from Employee
+
+where primary_flag = "Y"
+
+UNION 
+
+SELECT Employee_id , department_id 
+from Employee 
+group by employee_id 
+Having count(employee_id ) = '1';
