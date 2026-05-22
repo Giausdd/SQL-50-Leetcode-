@@ -1,0 +1,5 @@
+Select E2.unique_id, E1.name  
+
+from Employees AS E1 
+LEFT join EmployeeUNI AS E2 
+on E1.ID = E2.ID ;
