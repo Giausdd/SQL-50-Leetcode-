@@ -1,0 +1,6 @@
+SELECT 
+     e.Name AS Employee 
+from Employee AS e
+join Employee AS m 
+on  e.Managerid = m.id 
+where e.salary> m.salary ;
