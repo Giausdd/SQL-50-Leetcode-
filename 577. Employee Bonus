@@ -1,0 +1,8 @@
+Select e.name, b.Bonus 
+
+from Employee AS e 
+left Join Bonus AS b
+
+on e.empid = b.empid 
+where b.bonus < 1000 
+or b.Bonus is null ;
