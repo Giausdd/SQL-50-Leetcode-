@@ -1,0 +1,7 @@
+select employee_id ,
+     CASE 
+         WHEN employee_id % 2 <> 0 AND  NAME not like 'M%' THEN SALARY 
+         ELSE 0 
+    END AS BONUS 
+    FROM Employees 
+    order by employee_id ;
